@@ -8,13 +8,6 @@
         body {
             margin: 0;
         }
-        #active {
-            color: red;
-        }
-
-        .saw {
-            color: gray;
-        }
 
         a {
             color: black;
@@ -35,6 +28,18 @@
             margin: 0;
             padding: 20px;
         }
+
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #grid ol {
+            padding-left: 33px;
+        }
+
+        #article {
+            padding-left: 25px;
+        }
     </style>
 </head>
 
@@ -43,30 +48,33 @@
         <a href="index.html">WEB</font>
         </a>
     </h1>
-    <ol>
-        <li>
-            <a href="1.html" class="saw">HTML</font>
-            </a>
-        </li>
-        <li>
-            <a href="2.html" class="saw" id="active">CSS</font>
-            </a>
-        </li>
-        <li>
-            <a href="3.html">JavaScript</font>
-            </a>
-        </li>
-    </ol>
-
-    <h2>CSS</h2>
-    <p>
-        Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup
-        language like HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2] CSS
-        is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation
-        can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics,
-        enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce
-        complexity and repetition in the structural content.
-    </p>
+    <div id="grid">
+        <ol>
+            <li>
+                <a href="1.html">HTML</font>
+                </a>
+            </li>
+            <li>
+                <a href="2.html">CSS</font>
+                </a>
+            </li>
+            <li>
+                <a href="3.html">JavaScript</font>
+                </a>
+            </li>
+        </ol>
+        <div id="article">
+            <h2>CSS</h2>
+            <p>
+                Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup
+                language like HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
+                CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3]
+                This separation can improve content accessibility, provide more flexibility and control in the specification
+                of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant
+                CSS in a separate .css file, and reduce complexity and repetition in the structural content.
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>
